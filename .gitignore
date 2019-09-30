@@ -1,5 +1,8 @@
 *.rar
 
+#zip
+zip/libz.a
+
 # Object files
 *.o
 *.ko
