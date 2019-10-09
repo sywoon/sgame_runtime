@@ -57,7 +57,6 @@
 		53C9D60B1EF9643000B0828D /* wmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D5FE1EF9643000B0828D /* wmessage.c */; };
 		840092821CCF406200F89A56 /* auxiliar.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092611CCF406200F89A56 /* auxiliar.c */; };
 		840092831CCF406200F89A56 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092631CCF406200F89A56 /* buffer.c */; };
-		840092841CCF406200F89A56 /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092651CCF406200F89A56 /* compat.c */; };
 		840092851CCF406200F89A56 /* except.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092671CCF406200F89A56 /* except.c */; };
 		840092861CCF406200F89A56 /* inet.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092691CCF406200F89A56 /* inet.c */; };
 		840092871CCF406200F89A56 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 8400926B1CCF406200F89A56 /* io.c */; };
@@ -80,13 +79,28 @@
 		84F8B8B31C45678E00AE9B8F /* tolua.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B21C45678E00AE9B8F /* tolua.c */; };
 		84F8B8B51C45679700AE9B8F /* struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B41C45679700AE9B8F /* struct.c */; };
 		84F8B8B71C45679C00AE9B8F /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B61C45679C00AE9B8F /* lpeg.c */; };
+		BC25E849234E026F007E9C2C /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E839234E026F007E9C2C /* gzread.c */; };
+		BC25E84A234E026F007E9C2C /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E83A234E026F007E9C2C /* inffast.c */; };
+		BC25E84B234E026F007E9C2C /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E83B234E026F007E9C2C /* zutil.c */; };
+		BC25E84C234E026F007E9C2C /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E83C234E026F007E9C2C /* inflate.c */; };
+		BC25E84D234E026F007E9C2C /* luazlib.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E83D234E026F007E9C2C /* luazlib.c */; };
+		BC25E84E234E026F007E9C2C /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E83E234E026F007E9C2C /* crc32.c */; };
+		BC25E84F234E026F007E9C2C /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E83F234E026F007E9C2C /* trees.c */; };
+		BC25E850234E026F007E9C2C /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E840234E026F007E9C2C /* infback.c */; };
+		BC25E851234E026F007E9C2C /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E841234E026F007E9C2C /* compress.c */; };
+		BC25E852234E026F007E9C2C /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E842234E026F007E9C2C /* uncompr.c */; };
+		BC25E853234E026F007E9C2C /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E843234E026F007E9C2C /* deflate.c */; };
+		BC25E854234E026F007E9C2C /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E844234E026F007E9C2C /* gzclose.c */; };
+		BC25E855234E026F007E9C2C /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E845234E026F007E9C2C /* gzwrite.c */; };
+		BC25E856234E026F007E9C2C /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E846234E026F007E9C2C /* gzlib.c */; };
+		BC25E857234E026F007E9C2C /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E847234E026F007E9C2C /* adler32.c */; };
+		BC25E858234E026F007E9C2C /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = BC25E848234E026F007E9C2C /* inftrees.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F4B04D01800959F002EA938 /* tolua.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tolua.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4B04D71800959F002EA938 /* tolua-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tolua-Info.plist"; sourceTree = "<group>"; };
 		0F4B04D91800959F002EA938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0F4B04DB1800959F002EA938 /* tolua-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tolua-Prefix.pch"; sourceTree = "<group>"; };
 		5388F3071CDE0F4C00C9D424 /* lsproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lsproto.c; path = ../../sproto/lsproto.c; sourceTree = "<group>"; };
 		5388F3081CDE0F4C00C9D424 /* msvcint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = msvcint.h; path = ../../sproto/msvcint.h; sourceTree = "<group>"; };
 		5388F3091CDE0F4C00C9D424 /* sproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sproto.c; path = ../../sproto/sproto.c; sourceTree = "<group>"; };
@@ -215,6 +229,23 @@
 		84F8B8B21C45678E00AE9B8F /* tolua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tolua.c; path = ../../tolua.c; sourceTree = "<group>"; };
 		84F8B8B41C45679700AE9B8F /* struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = struct.c; path = ../../struct.c; sourceTree = "<group>"; };
 		84F8B8B61C45679C00AE9B8F /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
+		BC25E837234E015B007E9C2C /* tolua-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tolua-Prefix.pch"; sourceTree = "<group>"; };
+		BC25E839234E026F007E9C2C /* gzread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gzread.c; path = ../../../zip/gzread.c; sourceTree = "<group>"; };
+		BC25E83A234E026F007E9C2C /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inffast.c; path = ../../../zip/inffast.c; sourceTree = "<group>"; };
+		BC25E83B234E026F007E9C2C /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zutil.c; path = ../../../zip/zutil.c; sourceTree = "<group>"; };
+		BC25E83C234E026F007E9C2C /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inflate.c; path = ../../../zip/inflate.c; sourceTree = "<group>"; };
+		BC25E83D234E026F007E9C2C /* luazlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = luazlib.c; path = ../../../zip/luazlib.c; sourceTree = "<group>"; };
+		BC25E83E234E026F007E9C2C /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc32.c; path = ../../../zip/crc32.c; sourceTree = "<group>"; };
+		BC25E83F234E026F007E9C2C /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = trees.c; path = ../../../zip/trees.c; sourceTree = "<group>"; };
+		BC25E840234E026F007E9C2C /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = infback.c; path = ../../../zip/infback.c; sourceTree = "<group>"; };
+		BC25E841234E026F007E9C2C /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compress.c; path = ../../../zip/compress.c; sourceTree = "<group>"; };
+		BC25E842234E026F007E9C2C /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = uncompr.c; path = ../../../zip/uncompr.c; sourceTree = "<group>"; };
+		BC25E843234E026F007E9C2C /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = deflate.c; path = ../../../zip/deflate.c; sourceTree = "<group>"; };
+		BC25E844234E026F007E9C2C /* gzclose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gzclose.c; path = ../../../zip/gzclose.c; sourceTree = "<group>"; };
+		BC25E845234E026F007E9C2C /* gzwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gzwrite.c; path = ../../../zip/gzwrite.c; sourceTree = "<group>"; };
+		BC25E846234E026F007E9C2C /* gzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gzlib.c; path = ../../../zip/gzlib.c; sourceTree = "<group>"; };
+		BC25E847234E026F007E9C2C /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = adler32.c; path = ../../../zip/adler32.c; sourceTree = "<group>"; };
+		BC25E848234E026F007E9C2C /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inftrees.c; path = ../../../zip/inftrees.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +279,7 @@
 		0F4B04D51800959F002EA938 /* tolua */ = {
 			isa = PBXGroup;
 			children = (
+				BC25E838234E0247007E9C2C /* zip */,
 				53C9D5E11EF9639B00B0828D /* pbc */,
 				53C9D5891EF95F8300B0828D /* lua */,
 				5388F3061CDE0F1100C9D424 /* sproto */,
@@ -270,7 +302,7 @@
 			children = (
 				0F4B04D71800959F002EA938 /* tolua-Info.plist */,
 				0F4B04D81800959F002EA938 /* InfoPlist.strings */,
-				0F4B04DB1800959F002EA938 /* tolua-Prefix.pch */,
+				BC25E837234E015B007E9C2C /* tolua-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -442,6 +474,29 @@
 			path = ../../luasocket;
 			sourceTree = "<group>";
 		};
+		BC25E838234E0247007E9C2C /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				BC25E847234E026F007E9C2C /* adler32.c */,
+				BC25E841234E026F007E9C2C /* compress.c */,
+				BC25E83E234E026F007E9C2C /* crc32.c */,
+				BC25E843234E026F007E9C2C /* deflate.c */,
+				BC25E844234E026F007E9C2C /* gzclose.c */,
+				BC25E846234E026F007E9C2C /* gzlib.c */,
+				BC25E839234E026F007E9C2C /* gzread.c */,
+				BC25E845234E026F007E9C2C /* gzwrite.c */,
+				BC25E840234E026F007E9C2C /* infback.c */,
+				BC25E83A234E026F007E9C2C /* inffast.c */,
+				BC25E83C234E026F007E9C2C /* inflate.c */,
+				BC25E848234E026F007E9C2C /* inftrees.c */,
+				BC25E83D234E026F007E9C2C /* luazlib.c */,
+				BC25E83F234E026F007E9C2C /* trees.c */,
+				BC25E842234E026F007E9C2C /* uncompr.c */,
+				BC25E83B234E026F007E9C2C /* zutil.c */,
+			);
+			path = zip;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -503,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC25E856234E026F007E9C2C /* gzlib.c in Sources */,
 				53C9D6041EF9643000B0828D /* map.c in Sources */,
 				5388F30C1CDE0F4C00C9D424 /* sproto.c in Sources */,
 				84F8B8B51C45679700AE9B8F /* struct.c in Sources */,
@@ -511,20 +567,25 @@
 				53C9D5FF1EF9643000B0828D /* alloc.c in Sources */,
 				53C9D5D51EF95F8300B0828D /* lstate.c in Sources */,
 				53C9D6091EF9643000B0828D /* stringpool.c in Sources */,
+				BC25E850234E026F007E9C2C /* infback.c in Sources */,
 				53C9D6011EF9643000B0828D /* bootstrap.c in Sources */,
+				BC25E84B234E026F007E9C2C /* zutil.c in Sources */,
 				53C9D5DF1EF95F8300B0828D /* lzio.c in Sources */,
 				842A59A91C85B76100EA2815 /* fpconv.c in Sources */,
 				8400928F1CCF406200F89A56 /* udp.c in Sources */,
+				BC25E84C234E026F007E9C2C /* inflate.c in Sources */,
 				53C9D5D21EF95F8300B0828D /* lopcodes.c in Sources */,
 				53C9D5DB1EF95F8300B0828D /* lua.c in Sources */,
 				53C9D5CD1EF95F8300B0828D /* llex.c in Sources */,
 				53C9D6031EF9643000B0828D /* decode.c in Sources */,
+				BC25E849234E026F007E9C2C /* gzread.c in Sources */,
 				84ED5C081C4D0749006965FF /* bit.c in Sources */,
 				53C9D5D61EF95F8300B0828D /* lstring.c in Sources */,
 				840092871CCF406200F89A56 /* io.c in Sources */,
 				53C9D6001EF9643000B0828D /* array.c in Sources */,
 				53C9D5DD1EF95F8300B0828D /* lundump.c in Sources */,
 				53C9D5E01EF95F8300B0828D /* print.c in Sources */,
+				BC25E852234E026F007E9C2C /* uncompr.c in Sources */,
 				53C9D5CB1EF95F8300B0828D /* linit.c in Sources */,
 				8400928C1CCF406200F89A56 /* serial.c in Sources */,
 				840092861CCF406200F89A56 /* inet.c in Sources */,
@@ -533,8 +594,11 @@
 				53C9D5CF1EF95F8300B0828D /* lmem.c in Sources */,
 				53C9D5D41EF95F8300B0828D /* lparser.c in Sources */,
 				53C9D60A1EF9643000B0828D /* varint.c in Sources */,
+				BC25E84E234E026F007E9C2C /* crc32.c in Sources */,
 				840092831CCF406200F89A56 /* buffer.c in Sources */,
+				BC25E84D234E026F007E9C2C /* luazlib.c in Sources */,
 				849CC46B1C9846C800D4D510 /* int64.c in Sources */,
+				BC25E855234E026F007E9C2C /* gzwrite.c in Sources */,
 				8400928A1CCF406200F89A56 /* options.c in Sources */,
 				53C9D5E51EF963B700B0828D /* pbc-lua.c in Sources */,
 				53C9D6071EF9643000B0828D /* register.c in Sources */,
@@ -543,7 +607,10 @@
 				8400928D1CCF406200F89A56 /* tcp.c in Sources */,
 				53C9D5D81EF95F8300B0828D /* ltable.c in Sources */,
 				84F8B8B11C45677A00AE9B8F /* pb.c in Sources */,
+				BC25E851234E026F007E9C2C /* compress.c in Sources */,
+				BC25E853234E026F007E9C2C /* deflate.c in Sources */,
 				53C9D5C21EF95F8300B0828D /* lauxlib.c in Sources */,
+				BC25E84F234E026F007E9C2C /* trees.c in Sources */,
 				53C9D5D01EF95F8300B0828D /* loadlib.c in Sources */,
 				53C9D5C81EF95F8300B0828D /* ldump.c in Sources */,
 				53BD21391D5EBB9500A20481 /* uint64.c in Sources */,
@@ -562,8 +629,11 @@
 				53C9D6081EF9643000B0828D /* rmessage.c in Sources */,
 				842A59AB1C85B76100EA2815 /* strbuf.c in Sources */,
 				53C9D5C31EF95F8300B0828D /* lbaselib.c in Sources */,
+				BC25E854234E026F007E9C2C /* gzclose.c in Sources */,
 				5388F30B1CDE0F4C00C9D424 /* lsproto.c in Sources */,
 				53C9D5DA1EF95F8300B0828D /* ltm.c in Sources */,
+				BC25E857234E026F007E9C2C /* adler32.c in Sources */,
+				BC25E858234E026F007E9C2C /* inftrees.c in Sources */,
 				53C9D5D71EF95F8300B0828D /* lstrlib.c in Sources */,
 				53C9D5C11EF95F8300B0828D /* lapi.c in Sources */,
 				840092891CCF406200F89A56 /* mime.c in Sources */,
@@ -572,10 +642,10 @@
 				53C9D5C61EF95F8300B0828D /* ldebug.c in Sources */,
 				8400928B1CCF406200F89A56 /* select.c in Sources */,
 				53C9D5C71EF95F8300B0828D /* ldo.c in Sources */,
-				840092841CCF406200F89A56 /* compat.c in Sources */,
 				53C9D5C91EF95F8300B0828D /* lfunc.c in Sources */,
 				53C9D5CE1EF95F8300B0828D /* lmathlib.c in Sources */,
 				8400928E1CCF406200F89A56 /* timeout.c in Sources */,
+				BC25E84A234E026F007E9C2C /* inffast.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +697,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -658,6 +729,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -680,7 +752,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = tolua;
-				VALID_ARCHS = "x86_64 i386";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -704,7 +776,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = tolua;
-				VALID_ARCHS = "x86_64 i386";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;

@@ -1,0 +1,15 @@
+//
+//  tolua-Prefix.pch
+//  tolua
+//
+//  Created by 谭凯明 on 2019/10/9.
+//  Copyright © 2019 xlcw games. All rights reserved.
+//
+
+#ifndef tolua_Prefix_pch
+#define tolua_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* tolua_Prefix_pch */
