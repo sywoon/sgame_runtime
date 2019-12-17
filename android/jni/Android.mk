@@ -1,9 +1,16 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libz
+LOCAL_SRC_FILES := libz.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libluajit
 LOCAL_SRC_FILES := libluajit.a
 include $(PREBUILT_STATIC_LIBRARY)
+
 
 include $(CLEAR_VARS)
 LOCAL_FORCE_STATIC_EXECUTABLE := true
@@ -11,6 +18,8 @@ LOCAL_MODULE := tolua
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../luajit-2.1/src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../pbc
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../cjson
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../sproto
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../luasocket
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
 LOCAL_CPPFLAGS := -O2
@@ -39,6 +48,7 @@ LOCAL_SRC_FILES :=	../../tolua.c \
  					../../luasocket/usocket.c \
 				    ../../sproto/sproto.c \
 				    ../../sproto/lsproto.c \
+				    ../../zip/luazlib.c \
 				    ../../pbc/src/alloc.c \
 				    ../../pbc/src/array.c \
 				    ../../pbc/src/bootstrap.c \
@@ -55,4 +65,5 @@ LOCAL_SRC_FILES :=	../../tolua.c \
 				    ../../pbc/binding/lua/pbc-lua.c \
 
 LOCAL_WHOLE_STATIC_LIBRARIES += libluajit
+LOCAL_WHOLE_STATIC_LIBRARIES += libz
 include $(BUILD_SHARED_LIBRARY)
